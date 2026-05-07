@@ -1,0 +1,16 @@
+# MN Prime — robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /posts/*.json
+
+# Sitemap
+Sitemap: https://mnprime-medvedev.ru/sitemap.xml
+
+# Яндекс
+User-agent: Yandex
+Allow: /
+Disallow: /admin/
+Disallow: /posts/*.json
+Crawl-delay: 1

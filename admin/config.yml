@@ -1,0 +1,30 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images/blog"
+public_folder: "/images/blog"
+
+locale: ru
+
+collections:
+  - name: "posts"
+    label: "Статьи и новости"
+    folder: "public/posts"
+    create: true
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    identifier_field: "slug"
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Slug (URL)", name: "slug", widget: "string", hint: "Латиницей через дефис, напр: moya-statya" }
+      - { label: "Дата публикации", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - label: "Категория"
+        name: "category"
+        widget: "select"
+        options: ["Финансирование", "Инвестиции", "Управление", "Аналитика", "Новости"]
+      - { label: "Краткое описание (превью)", name: "preview", widget: "text" }
+      - { label: "Фото обложки", name: "image", widget: "image", required: false }
+      - { label: "Автор", name: "author", widget: "string", default: "MN Prime" }
+      - { label: "Текст статьи", name: "content", widget: "markdown" }
