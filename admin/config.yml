@@ -1,16 +1,16 @@
 backend:
   name: git-gateway
   branch: main
+  site_domain: mnprimesite.netlify.app
 
-media_folder: "public/images/blog"
+media_folder: "images/blog"
 public_folder: "/images/blog"
-
 locale: ru
 
 collections:
   - name: "posts"
     label: "Статьи и новости"
-    folder: "public/posts"
+    folder: "posts"
     create: true
     slug: "{{slug}}"
     extension: "json"
