@@ -5,27 +5,30 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#050A18" />
-
-    <!-- Базовые SEO -->
     <title>MN Prime — Стратегический консультант по коммерческой недвижимости</title>
     <meta name="description" content="Покупка коммерческой недвижимости для бизнеса и инвестиций в Москве. Льготное кредитование МСП 17,5%, лицензирование, управление активами." />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="https://mnprime-medvedev.ru/" />
-
-    <!-- Open Graph -->
+    <link rel="canonical" href="https://mnprime.ru/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="MN Prime — Стратегический консультант по коммерческой недвижимости" />
     <meta property="og:description" content="Покупка коммерческой недвижимости для бизнеса и инвестиций в Москве. Льготное кредитование МСП 17,5%, лицензирование, управление активами." />
-    <meta property="og:url" content="https://mnprime-medvedev.ru/" />
-    <meta property="og:image" content="https://mnprime-medvedev.ru/images/hero_home.jpg" />
+    <meta property="og:url" content="https://mnprime.ru/" />
+    <meta property="og:image" content="https://mnprime.ru/images/hero_home.jpg" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="MN Prime" />
-
-    <!-- Яндекс -->
-    <meta name="yandex-verification" content="ВСТАВЬТЕ_КОД_ИЗ_ЯНДЕКС_ВЕБМАСТЕР" />
-
-    <!-- Sitemap hint -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
     <script type="module" crossorigin src="/assets/index-CJR6VZaq.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BkjE2Cl7.css">
   </head>
