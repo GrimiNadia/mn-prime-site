@@ -1,12 +1,11 @@
 # MN Prime — robots.txt
-
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /posts/*.json
 
 # Sitemap
-Sitemap: https://mnprime-medvedev.ru/sitemap.xml
+Sitemap: https://mnprime.ru/sitemap.xml
 
 # Яндекс
 User-agent: Yandex
