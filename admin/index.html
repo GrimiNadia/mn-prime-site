@@ -1,18 +1,45 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>MN Prime — Редактор блога</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <script>
-    window.netlifyIdentity && window.netlifyIdentity.init({
-      APIUrl: "https://mnprimesite.netlify.app/.netlify/identity"
-    });
-  </script>
-</head>
-<body>
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-</body>
+Вот полный готовый файл — выдели всё в редакторе GitHub (Ctrl+A) и замени на это:
+
+```html
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#050A18" />
+    <title>MN Prime — Стратегический консультант по коммерческой недвижимости</title>
+    <meta name="description" content="Покупка коммерческой недвижимости для бизнеса и инвестиций в Москве. Льготное кредитование МСП 17,5%, лицензирование, управление активами." />
+    <meta name="robots" content="index,follow" />
+    <link rel="canonical" href="https://mnprime.ru/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MN Prime — Стратегический консультант по коммерческой недвижимости" />
+    <meta property="og:description" content="Покупка коммерческой недвижимости для бизнеса и инвестиций в Москве. Льготное кредитование МСП 17,5%, лицензирование, управление активами." />
+    <meta property="og:url" content="https://mnprime.ru/" />
+    <meta property="og:image" content="https://mnprime.ru/images/hero_home.jpg" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="MN Prime" />
+    <meta name="yandex-verification" content="ВСТАВЬТЕ_КОД_ИЗ_ЯНДЕКС_ВЕБМАСТЕР" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-CJR6VZaq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BkjE2Cl7.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
+```
+
+Commit changes → жди 3 минуты → потом переходим к шагу 2 (удалить сломанного пользователя в Netlify).
